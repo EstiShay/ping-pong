@@ -1,21 +1,20 @@
 //Business logic
 function numToList(userInput) {
   numList = [];
-  for (i = 1; (i <= userInput && i <= 90); i += 1) {
-    if (i === 90){
+  for (num = 1; (num <= userInput && num <= 90); num += 1) {
+    if (num === 90){
       numList.push("BORED NOW COME BACK LATER");
-    } else if (i % 15 === 0) {
+    } else if (num % 15 === 0) {
       numList.push("ping-pong");
-    } else if (i % 5 === 0) {
+    } else if (num % 5 === 0) {
       numList.push("pong");
-    } else if (i % 3   === 0) {
+    } else if (num % 3   === 0) {
       numList.push("ping");
     } else {
-      numList.push(i);
+      numList.push(num);
     }
   }
   return numList;
-
 }
 
 
@@ -23,10 +22,10 @@ function numToList(userInput) {
 $(document).ready(function() {
 
   $("#playing").submit(function(event) {
-    var input = $("input#cap-number").val();
-    var output = numToList(input);
+    var userInput = $("input#cap-number").val();
+    var ppList = numToList(userInput);
 
-    output.forEach(function(num) {
+    ppList.forEach(function(num) {
       $("ul").append("<li>" + num + "</li>");
     });
 
