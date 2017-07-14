@@ -10,7 +10,7 @@ This game takes in a number and returns a range of numbers up to the user input,
 
 ## Technologies Used
 
-HTML, CSS, JavaScript, jQuery
+HTML, CSS, Bootstrap, JavaScript, jQuery
 
 ## Specifications
 
