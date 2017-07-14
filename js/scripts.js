@@ -2,20 +2,20 @@
 function numToList(userInput) {
   numList = [];
   for (i = 1; i <= userInput; i += 1) {
-    numList.push(i);
+    if (i % 3   === 0) {
+      numList.push("ping");
+    } else {
+      numList.push(i);
+    }
   }
   return numList;
 
 }
 
 
-
-
-
-
 //User Interface
 $(document).ready(function(){
-  
+
   $("#playing").submit(function(event){
     var input = $("input#cap-number").val();
     var output = numToList(input);
