@@ -1,3 +1,50 @@
+body {
+  background-color: #ffffd3;
+  color: #50005e;
+}
+
+.jumbotron {
+  background-color: #00635a;
+  /*background-image: url(../img/pingpongpaddle.jpg);*/
+  color: white;
+}
+
+.game-play {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Chalkboard", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#play-button {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#replay-button {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 #result {
   display: none;
+}
+
+#paddleimg {
+  height: 150px;
+  border-radius: 5px;
+  border: 2px solid white;
+  float: right;
+}
+
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 12px;
+  background-color: white;
+  padding: 10px;
+  margin-top: 50px;
 }

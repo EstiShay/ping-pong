@@ -11,37 +11,51 @@
     <div class="container">
 
       <div class="jumbotron">
-        <h1>Ping-Pong</h1>
-        <p>A Ping-Pong Unlike Any Other Ping-Pong You've Played</p>
-      </div>
-
-      <h3>The Game:</h3>
-      <ol>
-        <li>Input a number</li>
-        <li>We'll count up to that number BUT...</li>
-        <li>Numbers divisible by 3 will be replaced by 'ping'</li>
-        <li>Numbers divisible by 5 will be replaced by 'pong'</li>
-        <li>And numbers divisible by 15 will be replaced by 'ping-pong'</li>
-      </ol>
-
-      <hr>
-
-      <form id="playing">
-        <div class="form-group">
-          <label for="cap-number">Enter in a cap number: </label>
-          <input id="cap-number" type="number">
-          <button type="submit" class="btn btn-primary">Play!</button>
+        <div class="row">
+          <div class="col-lg-8">
+            <h1>Ping-Pong</h1>
+            <p>A Ping-Pong Unlike Any Other Ping-Pong You've Played</p>
+          </div>
+          <div class="col-lg-4">
+            <img id="paddleimg" src="img/pingpongpaddle.jpg" alt="Purple paddle, with yellow ball, on green ping-pong table">
+          </div>
         </div>
-      </form>
-
-      <div id="result">
-        <p>Here goes nothin':</p>
-        <ul>
-          <!-- Ping-pong goes here -->
-        </ul>
-        <input type="button" class="btn btn-primary" value="Play again?" onClick="window.location.reload()">
       </div>
 
+      <div class="game-play">
+        <h3>The Game:</h3>
+        <ol>
+          <li>Input a number</li>
+          <li>We'll count up to that number BUT...</li>
+          <li>Numbers divisible by 3 will be replaced by 'ping'</li>
+          <li>Numbers divisible by 5 will be replaced by 'pong'</li>
+          <li>And numbers divisible by 15 will be replaced by 'ping-pong'</li>
+        </ol>
+
+        <hr>
+
+        <form id="playing">
+          <div class="form-group">
+            <label for="cap-number">Enter in a cap number: </label>
+            <input id="cap-number" type="number">
+            <button id="play-button" type="submit" class="btn btn-primary">Play!</button>
+          </div>
+        </form>
+
+        <div id="result">
+          <p>Here goes nothin':</p>
+          <ul>
+            <!-- Ping-pong goes here -->
+          </ul>
+          <input id="replay-button" type="button" class="btn btn-primary" value="Play again?" onClick="window.location.reload()">
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Created by Esti Shay, 2017</p>
+        <p>Ping pong paddle image by Jasper Fields (<a href="https://www.flickr.com/photos/jasperfields/2442146122/in/photolist-4HNCXC-8ksyAL-Rvqk65-4MoxsH-4MoBEH-4MozdX-4MsXK7-4W69Up-6eRsEA-4MoC7B-4MsQs1-4MoFVt-4MsRuJ-4SEUBZ-4MsUzo-4MoKBc-4MsR6A-4MsEBS-4MsNxf-4MoHZz-4MoGs8-4MsJzQ-4MsFbL-4MoCZg-4Movyz-4MoGZR-6eMipX-eDg4CW-7zHyW4-7kgqQz-GGRUfC-65HfFH-FkPQr-66F231-cyHPsL-7ATga2-8xB7F4-dtgB7R-aa2rU-7AQ57E-7ALhGX-7kgpXr-6cjjzj-7bXKPL-a6jzpZ-a6nr5W-6uesgR-hBf66-ervKnG-4i67AP">Flickr</a>).</p>
+
+      </div>
     </div>
   </body>
 </html>
