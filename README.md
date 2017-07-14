@@ -6,7 +6,7 @@
 
 ## Description
 
-
+This game takes in a number and returns a range of numbers up to the user input, with certain numbers replaced by words.
 
 ## Technologies Used
 
@@ -26,6 +26,9 @@ HTML, CSS, JavaScript, jQuery
 * When the returned list of numbers includes a multiple of 15, it replaces that number with 'ping-pong.'
   * Input: 16
   * Output: 1, 2, ping ... 13, 14, ping-pong, 16.
+* When given a number over 89, the computer gets bored and quits.
+  * Input: 91
+  * Output: 1, 2, ping, 4 ... 88, 89, BORED NOW COME BACK LATER
 
 
 ### License
