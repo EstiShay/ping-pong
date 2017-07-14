@@ -1,7 +1,7 @@
 //Business logic
 function numToList(userInput) {
   numList = [];
-  for (i = 1; i <= userInput; i += 1) {
+  for (i = 1; (i <= userInput && i <= 90); i += 1) {
     if (i % 15 === 0) {
       numList.push("ping-pong");
     } else if (i % 5 === 0) {
@@ -29,6 +29,7 @@ $(document).ready(function() {
     });
 
     $("#result").show();
+    $("#playing").hide();
     event.preventDefault();
   });
 });
