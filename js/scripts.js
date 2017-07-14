@@ -2,7 +2,9 @@
 function numToList(userInput) {
   numList = [];
   for (i = 1; i <= userInput; i += 1) {
-    if (i % 5 === 0) {
+    if (i % 15 === 0) {
+      numList.push("ping-pong");
+    } else if (i % 5 === 0) {
       numList.push("pong");
     } else if (i % 3   === 0) {
       numList.push("ping");
