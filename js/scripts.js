@@ -17,14 +17,14 @@ function numToList(userInput) {
 }
 
 
-//User Interface
-$(document).ready(function(){
+//UI logic
+$(document).ready(function() {
 
-  $("#playing").submit(function(event){
+  $("#playing").submit(function(event) {
     var input = $("input#cap-number").val();
     var output = numToList(input);
 
-    output.forEach(function(num){
+    output.forEach(function(num) {
       $("ul").append("<li>" + num + "</li>");
     });
 
