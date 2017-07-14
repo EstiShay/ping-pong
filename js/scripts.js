@@ -21,7 +21,8 @@ function numToList(userInput) {
 //UI logic
 $(document).ready(function() {
 
-  $("#playing").submit(function(event) {
+
+  $("#play-button").click(function() {
     var userInput = $("input#cap-number").val();
     var ppList = numToList(userInput);
 
@@ -29,9 +30,23 @@ $(document).ready(function() {
     ppList.forEach(function(num) {
       $("ul").append("<li>" + num + "</li>");
     });
-
     $("#result").show();
-    // $("#playing").hide();
     event.preventDefault();
   });
+
+  $("#reverseplay-button").click(function() {
+    var userInput = $("input#cap-number").val();
+    var ppList = numToList(userInput);
+    ppList.reverse();
+
+    $("ul").empty();
+    ppList.forEach(function(num) {
+      $("ul").append("<li>" + num + "</li>");
+    });
+    $("#result").show();
+    event.preventDefault();
+  });
+
+    // $("#playing").hide();
+
 });

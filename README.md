@@ -29,6 +29,9 @@ HTML, CSS, JavaScript, jQuery
 * When given a number over 89, the computer gets bored and quits.
   * Input: 91
   * Output: 1, 2, ping, 4 ... 88, 89, BORED NOW COME BACK LATER
+* When user selects the reverse play button, the numbers and words will display in descending order.
+  * Input: 5, Reverse
+  * Output: pong, 4, ping, 2, 1
 
 ## Alternative Play
 
