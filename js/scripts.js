@@ -25,12 +25,13 @@ $(document).ready(function() {
     var userInput = $("input#cap-number").val();
     var ppList = numToList(userInput);
 
+    $("ul").empty();
     ppList.forEach(function(num) {
       $("ul").append("<li>" + num + "</li>");
     });
 
     $("#result").show();
-    $("#playing").hide();
+    // $("#playing").hide();
     event.preventDefault();
   });
 });

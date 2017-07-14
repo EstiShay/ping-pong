@@ -30,6 +30,10 @@ HTML, CSS, JavaScript, jQuery
   * Input: 91
   * Output: 1, 2, ping, 4 ... 88, 89, BORED NOW COME BACK LATER
 
+## Alternative Play
+
+This version of the game allows you to replay within the same window.  However, the files contain comments that would easily allow you to refactor the code to toggle between the answer and a fresh play form.
+
 
 ### License
 
