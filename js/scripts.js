@@ -17,6 +17,22 @@ function numToList(userInput) {
   return numList;
 }
 
+function revToList(userInput) {
+  numList = [];
+  for (num = 1; num <= userInput; num += 1) {
+    if (num % 15 === 0) {
+      numList.push("ping-pong");
+    } else if (num % 5 === 0) {
+      numList.push("pong");
+    } else if (num % 3   === 0) {
+      numList.push("ping");
+    } else {
+      numList.push(num);
+    }
+  }
+  return numList;
+}
+
 
 //UI logic
 $(document).ready(function() {
@@ -36,13 +52,19 @@ $(document).ready(function() {
 
   $("#reverseplay-button").click(function() {
     var userInput = $("input#cap-number").val();
-    var ppList = numToList(userInput);
+    var ppList = revToList(userInput);
     ppList.reverse();
+
+    if (ppList.length >= 90) {
+      ppList.splice(89);
+      ppList.splice(89, 0, "BORED NOW COME BACK LATER")
+    }
 
     $("ul").empty();
     ppList.forEach(function(num) {
       $("ul").append("<li>" + num + "</li>");
     });
+    
     $("#result").show();
     event.preventDefault();
   });
